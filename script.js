@@ -3,7 +3,5 @@ const removeButton = document.querySelector('input[type="button"]');
 const dropdown = document.getElementById('colorSelect');
 
 removeButton.addEventListener('click', function(){
-	if (dropdown.selectedIndex !== -1) {
-		dropdown.removeChild(dropdown.options[dropdown.selectedIndex]);
-	}
+	dropdown.remove(dropdown.selectedIndex);
 });
