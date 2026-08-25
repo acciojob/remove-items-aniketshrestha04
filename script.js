@@ -4,6 +4,6 @@ const dropdown = document.getElementById('colorSelect');
 
 removeButton.addEventListener('click', function(){
 	if (dropdown.selectedIndex !== -1) {
-		dropdown.remove(dropdown.selectedIndex);
+		dropdown.removeChild(dropdown.options[dropdown.selectedIndex]);
 	}
 });
